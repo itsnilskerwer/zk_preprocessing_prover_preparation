@@ -95,9 +95,9 @@ fn main() {
 
     let merkle_root = ark_bn254::Fr::from_str(
         "12962407178973411323556031498218835147452685534794775607614173838598524125905"
-    ).unwrap();    
+    ).unwrap();
 
-    let verifying_key = load_verifying_key("../merkle_poseidon_root_ecdsa/verifying_key.sec1");
+    let verifying_key = load_verifying_key("../merkle_poseidon_root_ecdsa/verifying_key.sec1"); // ecdsa public key 
 
     let signature = load_signature("../merkle_poseidon_root_ecdsa/signature.sig");
 

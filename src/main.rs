@@ -93,6 +93,7 @@ fn fr_to_32be_bytes(f: &Fr) -> [u8; 32] {
 fn main() {
     println!("Hello, prover_preparation!");
 
+    // ------ Paste root ------
     let merkle_root = ark_bn254::Fr::from_str(
         "12962407178973411323556031498218835147452685534794775607614173838598524125905"
     ).unwrap();
@@ -101,6 +102,7 @@ fn main() {
 
     let signature = load_signature("../merkle_poseidon_root_ecdsa/signature.sig");
 
+    // ----- Paste leaves -------
     let leaves: [Fr; 4] = [
         Fr::from_str("4910744290370992967594783267190021468504474627849903460949550480278838140199").unwrap(),
         Fr::from_str("10194548762545774750915906808733983907201990848957491253134558847853880061861").unwrap(),
